@@ -9,7 +9,7 @@ L'objectif de cette application est de faciliter l'ajout des questions pour l'ap
 
 - interface : classe pour la partie visible du site (IHM)
 - main : fonction principale qui gère l'écriture des fichier
-- gestion_fichiers : classe pour la gestion des fichiers (lecture, écriture...)
+- gestion_fichiers : classe pour la gestion des fichiers
 - config.json : fichier de configuration avec les liens pour les fichiers de questionnaire (fichier local non poussé sur git)
 
 ### Fonctionnement
@@ -18,3 +18,10 @@ L'objectif de cette application est de faciliter l'ajout des questions pour l'ap
 - Fenêtres avec champs à remplir avec question, réponse, catégorie (ou film pour les questionnaires par catégorie). Boutons pour revenir au menu déroulant principal.
 - Ajout de la question dans le fichier.
 - Retour à la fenêtre des champs à remplir.
+
+### Structure des fichiers
+
+- id
+- categorie
+- intitule
+- reponses
