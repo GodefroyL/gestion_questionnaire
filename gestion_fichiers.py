@@ -15,7 +15,6 @@ class gestionFichiers:
         fichiers = [f for f in os.listdir(self.dossier_questionnaire) if f.endswith(".json")]
         return [os.path.splitext(f)[0] for f in fichiers]
 
-    
     def chemin_fichier(self, nom_fichier):
         """Reconstruire le chemin d'un fichier à partir de son nom"""
         return os.path.join(self.dossier_questionnaire, f'{nom_fichier}.json')
@@ -27,7 +26,7 @@ class gestionFichiers:
             nom_fichier (str): Le nom du fichier à créer sans l'extension .json
             contenu (dict): Le contenu à écrire dans le fichier
         """
-        chemin = f'{self.chemin_fichier(nom_fichier)}.json'
+        chemin = f'{self.chemin_fichier(nom_fichier)}'
         with open(chemin, 'w') as f:
             json.dump(contenu, f, indent=4)
     
